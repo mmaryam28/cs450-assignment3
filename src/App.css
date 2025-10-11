@@ -1,0 +1,66 @@
+/* Remove default body margin */
+body {
+  margin: 0;
+}
+
+/* Main app container */
+.personal-profile-app {
+  display: flex;
+  flex-direction: column; /* Stack header and content vertically */
+}
+
+/* Style for the header navigation */
+.header-navigation {
+  display: flex; /* Use Flexbox for horizontal layout */
+  justify-content: center; /* Space out items evenly */
+  align-items: center; /* Align items vertically */
+  padding: 15px 30px; /* Add space around the navbar */
+  background-color: #333; /* Dark background */
+  color: white; /* White text color */
+  height: 100px;
+  position: sticky; /* Make it stick to the top */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Style for the navigation menu */
+.navigation-menu {
+  display: flex; /* Use Flexbox for horizontal links */
+  list-style: none; /* Remove bullet points */
+  gap: 15px; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-size: 16px;
+}
+
+/* Style for individual navigation items */
+.navigation-menu p {
+  color: white; /* White text color */
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin: 0; /* Remove default paragraph margin */
+  padding: 10px 15px; /* Add padding for better click area */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for navigation items */
+.navigation-menu p:hover {
+  background-color: #555; /* Darker background on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Main content area */
+.main-content-area {
+  flex: 1; /* Take up remaining space */
+  overflow-y: auto; /* Allow scrolling if content is too tall */
+}
+
+/* Hide scrollbars globally */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+  display: none;
+}

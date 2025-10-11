@@ -1,0 +1,155 @@
+/* Resume Section Styles */
+.resume-section {
+  padding: 10px 0;
+  min-height: 100vh;
+}
+
+.resume-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.resume-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #272727;
+}
+
+.download-btn-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resume-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.resume-block {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+  position: relative;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #595959;
+}
+
+
+.item-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.item-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.item-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.item-period, .item-gpa {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities li {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.responsibilities li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #595959;
+  font-weight: bold;
+}
+
+/* Skills Styles */
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-category {
+  border-left: 4px solid #595959;
+  padding-left: 1rem;
+}
+
+.category-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-item {
+  background-color: #e7e7e766;
+  color: #333;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
